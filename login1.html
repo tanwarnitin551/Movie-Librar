@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login now</title>
+<script>
+    function myfunction(){
+        var un=document.forms["myforms"]["Uname"].value;
+        var pw=document.forms["myforms"]["Pass"].value;
+        if(u=="student" && pw=="1234"){
+            window.location.href="movies.html";
+        }
+        else{
+            alert("Invalid username and password");
+        }
+    }
+</script>
+<style>
+    body{
+        background-image: url('https://www.thehindu.com/sci-tech/agriculture/87sx5z/article30131510.ece/alternates/FREE_660/NEWS2FARMER');
+        background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+    }
+    h2{
+        padding: 10px;
+        color: rgb(14, 12, 12);
+    }
+    .inputText{
+        width: 300px;
+        height: 30px;
+        border: none;
+        border-radius: 10px;
+        padding-left: 7px;
+    }
+    #logButton{
+        width: 300px;
+        height: 30px;
+        border: none;
+        border-radius: 10px;
+        padding-left: 7px;
+        color: black;
+        font-size: 16px;
+    }
+</style>
+</head>
+<script type="text/javascript">
+    function display(form){
+    if (form.username.value=="root") { 
+            if (form.password.value=="root") {              
+                location="movies.html" 
+            } else {
+                    alert("Invalid Password")
+                    }
+            } else {  alert("Invalid Username")
+                 }
+                            }
+                </script>			
+    <body >
+    <h2>Login</h2>
+    <form >
+    <label>User Name</label>
+    <input type="text" name="username" class="inputText"  placeholder="User Name" /><br><br>
+    <label>Password</label>
+    <input type="password" name="password" class="inputText"  placeholder="Password"/><br><br>
+    <input type="button" value="Login" id="logButton"  onClick="display(this.form)"/>
+    
+    </form>
+    <h2>Password and user is root</h2>
+    </body>
+</html>
